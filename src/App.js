@@ -31,7 +31,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/services" element={<OurServices />} />
-          <Route path="/aboutus/learn" element={<LearnMore />} />
+          <Route path="/learn" element={<LearnMore />} />
           <Route path="/aboutus/learn/addusers" element={<AddUser />} /> {/* Add this line */}
           <Route path="/fetch" element={<FetchData />} />
         </Routes>

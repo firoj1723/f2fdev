@@ -99,7 +99,7 @@ const LearnMore = () => {
         <Col className="text-center">
           <h3 className="text-primary">Looking Ahead</h3>
           <p>We are excited about the future and are working towards our goals.</p>
-          <Link to="/aboutus/learn/addusers">
+          <Link to="/addusers">
             <Button variant="primary" size="lg">Get in Touch</Button>
           </Link>
         </Col>
