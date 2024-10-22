@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Add this import
 
 const LearnMore = () => {
   const cardStyle = {
@@ -98,7 +99,9 @@ const LearnMore = () => {
         <Col className="text-center">
           <h3 className="text-primary">Looking Ahead</h3>
           <p>We are excited about the future and are working towards our goals.</p>
-          <Button variant="primary" size="lg" href="/f2fdev/aboutus/learn/addusers">Get in Touch</Button>
+          <Link to="/aboutus/learn/addusers">
+            <Button variant="primary" size="lg">Get in Touch</Button>
+          </Link>
         </Col>
       </Row>
     </Container>

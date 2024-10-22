@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/logo1.png'; // Adjust the path as necessary
+import logo from '../assets/logo1.png';
 
 function CustomNavbar() {
   return (
@@ -14,14 +13,11 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link as={Link} to="/f2fdev/home" className="btn btn-outline-light mx-2">Home</Nav.Link>
-<Nav.Link as={Link} to="/f2fdev/aboutus" className="btn btn-outline-light mx-2">About Us</Nav.Link>
-<Nav.Link as={Link} to="/f2fdev/addusers" className="btn btn-outline-light mx-2">Contact Us</Nav.Link>
-<Nav.Link as={Link} to="/f2fdev/services" className="btn btn-outline-light mx-2">Our Services</Nav.Link>
-<Nav.Link as={Link} to="/f2fdev/feedback" className="btn btn-outline-light mx-2">Feedback</Nav.Link>
-
-            {/* Uncomment this line to enable the login link */}
-            {/* <Nav.Link as={Link} to="/login" className="btn btn-success mx-2">Login</Nav.Link> */}
+            <Nav.Link as={Link} to="/home" className="btn btn-outline-light mx-2">Home</Nav.Link>
+            <Nav.Link as={Link} to="/aboutus" className="btn btn-outline-light mx-2">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/addusers" className="btn btn-outline-light mx-2">Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="/services" className="btn btn-outline-light mx-2">Our Services</Nav.Link>
+            <Nav.Link as={Link} to="/feedback" className="btn btn-outline-light mx-2">Feedback</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

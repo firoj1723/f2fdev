@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/logo.png';
-import { app } from "../Firebase"; // Import if you plan to use Firebase functionalities later
 
 const AboutUs = () => {
   return (
@@ -9,7 +8,7 @@ const AboutUs = () => {
         <div className="row">
           {/* Image Section */}
           <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
-            <img src={logo} alt="Logo" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src={logo} alt="Logo" className="img-fluid" width={400} />
           </div>
 
           {/* Text Section */}
@@ -22,7 +21,7 @@ const AboutUs = () => {
               <p>
                 Our team is dedicated to creating innovative solutions that enhance the lives of our customers. We believe in the power of collaboration and innovation, and we're constantly pushing boundaries to ensure that our clients receive the best possible service.
               </p>
-              <a href="/f2fdev/aboutus/learn" className="btn btn-primary btn-lg mt-3">Learn More</a>
+              <a href="/aboutus/learn" className="btn btn-primary btn-lg mt-3">Learn More</a> {/* Changed the link here */}
             </div>
           </div>
         </div>
