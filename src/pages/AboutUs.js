@@ -22,7 +22,7 @@ const AboutUs = () => {
               <p>
                 Our team is dedicated to creating innovative solutions that enhance the lives of our customers. We believe in the power of collaboration and innovation, and we're constantly pushing boundaries to ensure that our clients receive the best possible service.
               </p>
-              <a href="/f2f/learn" className="btn btn-primary btn-lg mt-3">Learn More</a>
+              <a href="/f2fdev/learn" className="btn btn-primary btn-lg mt-3">Learn More</a>
             </div>
           </div>
         </div>

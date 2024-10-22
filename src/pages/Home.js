@@ -16,7 +16,7 @@ const HomePage = () => {
               <p className="lead mb-4">
                 We provide top-notch services that empower businesses and individuals. Let's build something amazing together.
               </p>
-              <a href="#services" className="btn btn-light btn-lg shadow rounded-pill">Explore Our Services</a>
+              <a href="/f2fdev/#services" className="btn btn-light btn-lg shadow rounded-pill">Explore Our Services</a>
             </div>
             <div className="col-12 col-md-6 mt-4 mt-md-0">
               <img src={hi} alt="Greeting" className="img-fluid rounded-circle shadow" style={{ maxWidth: '100%', height: 'auto' }} />
@@ -45,7 +45,7 @@ const HomePage = () => {
         <div className="container text-center">
           <h3 className="font-weight-bold">Have a Project in Mind?</h3>
           <p className="lead mb-4">Get in touch with us and let's discuss how we can help you bring your ideas to life.</p>
-          <a href="/f2f/addusers" className="btn btn-warning btn-lg shadow rounded-pill">Contact Us</a>
+          <a href="/f2fdev/addusers" className="btn btn-warning btn-lg shadow rounded-pill">Contact Us</a>
         </div>
       </section>
 

@@ -24,19 +24,20 @@ function App() {
         <Navbar /> {/* Render your Navbar component */}
 
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/f2f" element={<Home />} />
-          <Route path="/f2f/home" element={<Home />} />
-          <Route path="/f2f/addusers" element={<AddUser />} />
-          <Route path="/f2f/edituser/:id" element={<EditUser />} />
-          <Route path="/f2f/viewuser/:id" element={<ViewUser />} />
-          <Route path="/f2f/aboutus" element={<AboutUs />} />
-          <Route path="/f2f/contactus" element={<ContactUs />} />
-          <Route path="/f2f/feedback" element={<Feedback />} />
-          <Route path="/f2f/services" element={<OurServices />} />
-          <Route path="/f2f/learn" element={<LearnMore />} />
-          <Route path="/f2f/fetch" element={<FetchData />} />
-        </Routes>
+  <Route path="/f2fdev/" element={<Home />} />
+  <Route path="/f2fdev/home" element={<Home />} />
+  <Route path="/f2fdev/addusers" element={<AddUser />} />
+  <Route path="/f2fdev/edituser/:id" element={<EditUser />} />
+  <Route path="/f2fdev/viewuser/:id" element={<ViewUser />} />
+  <Route path="/f2fdev/aboutus" element={<AboutUs />} />
+  <Route path="/f2fdev/contactus" element={<ContactUs />} />
+  <Route path="/f2fdev/feedback" element={<Feedback />} />
+  <Route path="/f2fdev/services" element={<OurServices />} />
+  <Route path="/f2fdev/learn" element={<LearnMore />} />
+  <Route path="/f2fdev/fetch" element={<FetchData />} />
+</Routes>
+
+
         
       </div>
     </Router>
