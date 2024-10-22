@@ -22,7 +22,7 @@ const AboutUs = () => {
               <p>
                 Our team is dedicated to creating innovative solutions that enhance the lives of our customers. We believe in the power of collaboration and innovation, and we're constantly pushing boundaries to ensure that our clients receive the best possible service.
               </p>
-              <Link to="/learn" className="btn btn-primary btn-lg mt-3">Learn More</Link>
+              <Link to="/learn" className="btn btn-warning btn-lg shadow rounded-pill">Know More about Us</Link>
             </div>
           </div>
         </div>
