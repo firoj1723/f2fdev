@@ -34,8 +34,10 @@ function App() {
   <Route path="/f2fdev/contactus" element={<ContactUs />} />
   <Route path="/f2fdev/feedback" element={<Feedback />} />
   <Route path="/f2fdev/services" element={<OurServices />} />
-  <Route path="/f2fdev/learn" element={<LearnMore />} />
+  <Route path="/f2fdev/aboutus/learn" element={<LearnMore />} />
   <Route path="/f2fdev/fetch" element={<FetchData />} />
+  <Route path="/f2fdev/home/addusers" element={<AddUser />} />
+  <Route path="/f2fdev/aboutus/learn/addusers" element={<AddUser />} />
 </Routes>
 
 
