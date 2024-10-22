@@ -24,7 +24,8 @@ function App() {
         <Navbar /> {/* Render your Navbar component */}
 
         <Routes>
-  <Route path="/f2fdev/" element={<Home />} />
+  <Route path="/" element={<Home />} />
+  <Route path="/f2fdev" element={<Home />} />
   <Route path="/f2fdev/home" element={<Home />} />
   <Route path="/f2fdev/addusers" element={<AddUser />} />
   <Route path="/f2fdev/edituser/:id" element={<EditUser />} />
@@ -36,6 +37,8 @@ function App() {
   <Route path="/f2fdev/learn" element={<LearnMore />} />
   <Route path="/f2fdev/fetch" element={<FetchData />} />
 </Routes>
+
+
 
 
         
