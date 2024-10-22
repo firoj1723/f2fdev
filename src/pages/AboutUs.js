@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -21,7 +22,7 @@ const AboutUs = () => {
               <p>
                 Our team is dedicated to creating innovative solutions that enhance the lives of our customers. We believe in the power of collaboration and innovation, and we're constantly pushing boundaries to ensure that our clients receive the best possible service.
               </p>
-              <a href="/aboutus/learn" className="btn btn-primary btn-lg mt-3">Learn More</a> {/* Changed the link here */}
+              <Link to="/aboutus/learn" className="btn btn-primary btn-lg mt-3">Learn More</Link>
             </div>
           </div>
         </div>
