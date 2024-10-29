@@ -31,7 +31,7 @@ export default function AddUser() {
       console.log('User created successfully');
 
       // Set success message
-      setSuccessMessage("User added successfully!");
+      setSuccessMessage("your message has been sent!");
       setErrorMessage(""); // Clear any previous error message
 
       // Clear form after submission
