@@ -11,6 +11,7 @@ import ContactUs from './pages/ContactUs';
 import Feedback from './pages/Feedback'; 
 import LearnMore from './pages/LearnMore'; 
 import FetchData from './pages/FetchData';
+import Tidio from './Tidio';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -20,6 +21,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+        <Tidio />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,6 +37,7 @@ function App() {
           <Route path="/aboutus/learn/addusers" element={<AddUser />} /> {/* Add this line */}
           <Route path="/fetch" element={<FetchData />} />
         </Routes>
+        
       </div>
     </Router>
   );

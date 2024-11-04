@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 
+
 const AboutUs = () => {
   return (
     <section className="about-us-section py-5 bg-light">
@@ -26,8 +27,9 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>   
     </section>
+
   );
 };
 

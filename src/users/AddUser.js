@@ -124,7 +124,7 @@ export default function AddUser() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Enter your City Name"
+                placeholder="Enter your city name"
                 name="city"
                 id="city" // Added id for accessibility
                 value={city}
