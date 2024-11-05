@@ -15,6 +15,8 @@ import Tidio from './Tidio';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Faq from './pages/Faq';
+import TermsAndPolicy from './pages/TermsAndPolicy';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/learn" element={<LearnMore />} />
           <Route path="/aboutus/learn/addusers" element={<AddUser />} /> {/* Add this line */}
           <Route path="/fetch" element={<FetchData />} />
+          <Route path="/terms" element={<TermsAndPolicy />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
         
       </div>

@@ -19,6 +19,8 @@ function CustomNavbar() {
             <Nav.Link as={Link} to="/services" className="btn btn-outline-light mx-2">Our Services</Nav.Link>
             <Nav.Link as={Link} to="/feedback" className="btn btn-outline-light mx-2">Feedback</Nav.Link>
             <Nav.Link as={Link} to="/learn" className="btn btn-outline-light mx-2">Know More about Us</Nav.Link>
+            <Nav.Link as={Link} to="/faq" className="btn btn-outline-light mx-2">FAQ</Nav.Link>
+            <Nav.Link as={Link} to="/terms" className="btn btn-outline-light mx-2">Terms & Policy</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
