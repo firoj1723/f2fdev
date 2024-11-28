@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async'; // Import Helmet for SEO
 import { useNavigate, useLocation } from 'react-router-dom';
 import { getFirestore, addDoc, collection } from 'firebase/firestore'; // Firebase Firestore imports
 import { initializeApp } from 'firebase/app'; // Firebase initialization
@@ -56,78 +57,91 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="contact-us-section py-5 bg-light">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 mx-auto">
-            <h2 className="text-center mb-4">Contact Us</h2>
-            {successMessage && <div className="alert alert-success">{successMessage}</div>}
-            <form onSubmit={handleSubmit}>
-              {/* Name Input */}
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">Name</label>
-                <input 
-                  type="text" 
-                  className="form-control" 
-                  id="name" 
-                  name="name" 
-                  value={formData.name} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
+    <>
+      {/* Add Helmet for SEO */}
+      <Helmet>
+        <title>F2F Developers - Welcome to Our Company</title>
+        <meta name="description" content="F2F Developers provides top-notch services that empower businesses and individuals. Let's build something amazing together." />
+        <meta name="keywords" content="F2F Developers, IT services, Dausa software company, software development, website development, Dausa IT company, best IT company in Dausa, Dausa IT services, Dausa web designing company, F2F Developers" />
+        <meta property="og:title" content="F2F Developers - Welcome to Our Company" />
+        <meta property="og:description" content="Explore top-notch IT services with F2F Developers. Let us help you bring your ideas to life." />
+        <meta property="og:url" content="https://f2fdev.in" />
+        <meta property="og:image" content="https://f2fdev.in/assets/hi.png" />
+      </Helmet>
 
-              {/* Email Input */}
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">Email address</label>
-                <input 
-                  type="email" 
-                  className="form-control" 
-                  id="email" 
-                  name="email" 
-                  value={formData.email} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
+      <section className="contact-us-section py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 mx-auto">
+              <h2 className="text-center mb-4">Contact Us</h2>
+              {successMessage && <div className="alert alert-success">{successMessage}</div>}
+              <form onSubmit={handleSubmit}>
+                {/* Name Input */}
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label">Name</label>
+                  <input 
+                    type="text" 
+                    className="form-control" 
+                    id="name" 
+                    name="name" 
+                    value={formData.name} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                </div>
 
-              {/* Subject Input */}
-              <div className="mb-3">
-                <label htmlFor="subject" className="form-label">Subject</label>
-                <input 
-                  type="text" 
-                  className="form-control" 
-                  id="subject" 
-                  name="subject" 
-                  value={formData.subject} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
+                {/* Email Input */}
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">Email address</label>
+                  <input 
+                    type="email" 
+                    className="form-control" 
+                    id="email" 
+                    name="email" 
+                    value={formData.email} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                </div>
 
-              {/* Message Input */}
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">Message</label>
-                <textarea 
-                  className="form-control" 
-                  id="message" 
-                  name="message" 
-                  rows="5" 
-                  value={formData.message} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
+                {/* Subject Input */}
+                <div className="mb-3">
+                  <label htmlFor="subject" className="form-label">Subject</label>
+                  <input 
+                    type="text" 
+                    className="form-control" 
+                    id="subject" 
+                    name="subject" 
+                    value={formData.subject} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                </div>
 
-              {/* Submit Button */}
-              <div className="text-center">
-                <button type="submit" className="btn btn-primary btn-lg">Send Message</button>
-              </div>
-            </form>
+                {/* Message Input */}
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label">Message</label>
+                  <textarea 
+                    className="form-control" 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    value={formData.message} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <div className="text-center">
+                  <button type="submit" className="btn btn-primary btn-lg">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

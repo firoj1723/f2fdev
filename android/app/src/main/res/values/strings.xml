@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">f2fdev</string>
+    <string name="title_activity_main">f2fdev</string>
+    <string name="package_name">com.f2fdev.app</string>
+    <string name="custom_url_scheme">com.f2fdev.app</string>
+</resources>

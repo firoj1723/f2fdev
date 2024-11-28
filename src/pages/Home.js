@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'; // Import Helmet
 import AboutUs from './AboutUs';
 import OurServices from './OurServices';
 import Footer from './footer';
@@ -21,6 +22,17 @@ const HomePage = () => {
 
   return (
     <div>
+      {/* Add Helmet for SEO */}
+      <Helmet>
+        <title>F2F Developers - Welcome to Our Company</title>
+        <meta name="description" content="F2F Developers provides top-notch services that empower businesses and individuals. Let's build something amazing together." />
+        <meta name="keywords" content="F2F Developers, IT services, Dausa software company, software development, website development, Dausa IT company, best IT company in Dausa, Dausa IT services, Dausa web designing company, F2F Developers" />
+        <meta property="og:title" content="F2F Developers - Welcome to Our Company" />
+        <meta property="og:description" content="Explore top-notch IT services with F2F Developers. Let us help you bring your ideas to life." />
+        <meta property="og:url" content="https://f2fdev.in" />
+        <meta property="og:image" content="https://f2fdev.in/assets/hi.png" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="hero-section bg-primary text-white py-5">
         <div className="container">

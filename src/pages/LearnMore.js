@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Add this import
+import { Helmet } from 'react-helmet-async'; // Don't forget to import Helmet
 
 const LearnMore = () => {
   const cardStyle = {
@@ -15,96 +16,94 @@ const LearnMore = () => {
   };
 
   return (
-    <Container className="my-5">
-      <h2 className="text-center mb-4">Learn More About Us</h2>
-      
-      <Row className="mb-4">
-        <Col xs={12} md={6}>
-          <Card style={cardStyle} className="shadow-sm" 
-                onMouseEnter={(e) => e.currentTarget.style = {...cardStyle, ...cardHoverStyle}} 
-                onMouseLeave={(e) => e.currentTarget.style = cardStyle}>
-            <Card.Body>
-              <Card.Title className="text-primary">Our Mission</Card.Title>
-              <Card.Text>
-                At F2F Developers, our mission is to be clear, concise, and memorable, effectively communicating the company's purpose and direction.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        
-        <Col xs={12} md={6}>
-          <Card style={cardStyle} className="shadow-sm" 
-                onMouseEnter={(e) => e.currentTarget.style = {...cardStyle, ...cardHoverStyle}} 
-                onMouseLeave={(e) => e.currentTarget.style = cardStyle}>
-            <Card.Body>
-              <Card.Title className="text-primary">Our History</Card.Title>
-              <Card.Text>
-                Founded in 2024 by Firoj Khan and Mohd. Faraj, we aim to provide software and websites at affordable prices, helping businesses and individuals access digital solutions without high costs. Our first client project successfully established a professional digital presence at a competitive price.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+    <>
+      <Helmet>
+        <title>F2F Developers - Learn More About Us</title>
+        <meta name="description" content="F2F Developers provides top-notch services that empower businesses and individuals. Let's build something amazing together." />
+        <meta name="keywords" content="F2F Developers, IT services, Dausa software company, software development, website development, Dausa IT company, best IT company in Dausa, Dausa IT services, Dausa web designing company, F2F Developers" />
+        <meta property="og:title" content="F2F Developers - Learn More About Us" />
+        <meta property="og:description" content="Explore top-notch IT services with F2F Developers. Let us help you bring your ideas to life." />
+        <meta property="og:url" content="https://f2fdev.in" />
+        <meta property="og:image" content="https://f2fdev.in/assets/hi.png" />
+      </Helmet>
 
-      <Row className="mb-4">
-        <Col xs={12} md={6}>
-          <Card style={cardStyle} className="shadow-sm" 
-                onMouseEnter={(e) => e.currentTarget.style = {...cardStyle, ...cardHoverStyle}} 
-                onMouseLeave={(e) => e.currentTarget.style = cardStyle}>
-            <Card.Body>
-              <Card.Title className="text-primary">Our Values</Card.Title>
-              <ul className="list-unstyled">
-                <li><i className="bi bi-check-circle-fill text-success"></i> Integrity</li>
-                <li><i className="bi bi-check-circle-fill text-success"></i> Innovation</li>
-                <li><i className="bi bi-check-circle-fill text-success"></i> Customer Satisfaction</li>
-              </ul>
-            </Card.Body>
-          </Card>
-        </Col>
+      <Container className="my-5">
+        <h2 className="text-center mb-4">Learn More About Us</h2>
 
-        <Col xs={12} md={6}>
-          <Card style={cardStyle} className="shadow-sm" 
-                onMouseEnter={(e) => e.currentTarget.style = {...cardStyle, ...cardHoverStyle}} 
-                onMouseLeave={(e) => e.currentTarget.style = cardStyle}>
-            <Card.Body>
-              <Card.Title className="text-primary">Meet the Team</Card.Title>
-              <Card.Text>
-                Our dedicated team is passionate about creating innovative, user-friendly, and affordable digital solutions that empower businesses of all sizes to succeed in the digital world.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+        <Row className="mb-4">
+          <Col xs={12} md={6}>
+            <Card
+              style={cardStyle}
+              className="shadow-sm"
+              onMouseEnter={(e) => e.currentTarget.style = { ...cardStyle, ...cardHoverStyle }}
+              onMouseLeave={(e) => e.currentTarget.style = cardStyle}
+            >
+              <Card.Body>
+                <Card.Title className="text-primary">Our Mission</Card.Title>
+                <Card.Text>
+                  At F2F Developers, our mission is to be clear, concise, and memorable, effectively communicating the company's purpose and direction.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
 
-      <Row className="mb-4">
-        <Col>
-          <Card style={cardStyle} className="shadow-sm" 
-                onMouseEnter={(e) => e.currentTarget.style = {...cardStyle, ...cardHoverStyle}} 
-                onMouseLeave={(e) => e.currentTarget.style = cardStyle}>
-            <Card.Body>
-              <Card.Title className="text-primary">Customer Stories</Card.Title>
-              <Card.Text>
-                Hear from our customers about their experiences with us:
-              </Card.Text>
-              <blockquote className="blockquote">
-                <p>"We needed a professional website for our small business, but most quotes were beyond our budget. F2F Developers delivered a sleek, modern website that looks amazing, all while staying within our budget. Their team is responsive, creative, and understood our vision perfectly!"</p>
-                <footer className="blockquote-footer">— Narendra Jonwal, Owner of Amol Educare</footer>
-              </blockquote>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+          <Col xs={12} md={6}>
+            <Card
+              style={cardStyle}
+              className="shadow-sm"
+              onMouseEnter={(e) => e.currentTarget.style = { ...cardStyle, ...cardHoverStyle }}
+              onMouseLeave={(e) => e.currentTarget.style = cardStyle}
+            >
+              <Card.Body>
+                <Card.Title className="text-primary">Our History</Card.Title>
+                <Card.Text>
+                  Founded in 2024 by Firoj Khan and Mohd. Faraj, we aim to provide software and websites at affordable prices, helping businesses and individuals access digital solutions without high costs. Our first client project successfully established a professional digital presence at a competitive price.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
 
-      <Row>
-        <Col className="text-center">
-          <h3 className="text-primary">Looking Ahead</h3>
-          <p>We are excited about the future and are working towards our goals.</p>
-          <Link to="/addusers">
-            <Button variant="primary" size="lg">Get in Touch</Button>
-          </Link>
-        </Col>
-      </Row>
-    </Container>
+        <Row className="mb-4">
+          <Col xs={12} md={6}>
+            <Card
+              style={cardStyle}
+              className="shadow-sm"
+              onMouseEnter={(e) => e.currentTarget.style = { ...cardStyle, ...cardHoverStyle }}
+              onMouseLeave={(e) => e.currentTarget.style = cardStyle}
+            >
+              <Card.Body>
+                <Card.Title className="text-primary">Our Values</Card.Title>
+                <ul className="list-unstyled">
+                  <li><i className="bi bi-check-circle-fill text-success"></i> Integrity</li>
+                  <li><i className="bi bi-check-circle-fill text-success"></i> Innovation</li>
+                  <li><i className="bi bi-check-circle-fill text-success"></i> Customer Satisfaction</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col xs={12} md={6}>
+            <Card
+              style={cardStyle}
+              className="shadow-sm"
+              onMouseEnter={(e) => e.currentTarget.style = { ...cardStyle, ...cardHoverStyle }}
+              onMouseLeave={(e) => e.currentTarget.style = cardStyle}
+            >
+              <Card.Body>
+                <Card.Title className="text-primary">Join Us</Card.Title>
+                <Card.Text>
+                  We are always looking for talented individuals to join our team. Explore current opportunities and become a part of the F2F Developers family!
+                </Card.Text>
+                <Link to="/careers">
+                  <Button variant="primary">Learn More</Button>
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
